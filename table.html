@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+
+        table,th,tr,td{
+                border: 1px solid grey;
+                text-align: center;
+                border-collapse: collapse;
+            }
+
+
+        /* table.nested th, table.nested tr, table.nested td{
+            border:none;
+        } */
+        /* .p-0{
+            padding: 0!important
+        } */
+
+        </style>
+
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+    <table >
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="6" >Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="4">Schedule</th>
+            <th rowspan="2">Topic</th>
+        <tr>
+
+            <td colspan="2">Start</td>
+            <td colspan="2">End</td>
+
+
+        </tr>
+
+
+    </tr>
+
+    <tr>
+        <td >Monday</td>
+        <td colspan="2">8 am</td>
+        <td colspan="2">2pm</td>
+        <td rowspan="1" >
+            <table cellpadding='0' width=100% class="nested">
+                <tr>
+                    <td>Introduction to XML</td>
+
+                </tr>
+                <tr >
+                    <td>Validity DTD And Relax NG</td>
+
+                </tr>
+            </table>
+        </td>
+
+   </tr>
+
+   <tr>
+       <td rowspan="3">Tuesday</td>
+       <td colspan="2">8am</td>
+       <td colspan="2">11am</td>
+       <td rowspan="3" class="p-0">
+           <table  cellpadding='15px' width=100% class="nested">
+               <tr>
+                   <td>XPATH</td>
+               </tr>
+               <tr>
+                   <td>XSL Transformation</td>
+               </tr>
+           </table>
+
+       </td>
+   </tr>
+
+   <tr>
+       <td colspan="2">11am</td>
+       <td colspan="2">2am</td>
+   </tr>
+
+   <tr>
+       <td colspan="2">2pm</td>
+       <td colspan="2">5pm</td>
+   </tr>
+
+
+   <tr>
+       <td>Wednesday</td>
+       <td colspan="2">5pm</td>
+       <td colspan="2">6pm</td>
+
+       <td>XLS Formating object</td>
+   </tr>
+
+
+    </table>
+
+
+    </body>
+</html>
